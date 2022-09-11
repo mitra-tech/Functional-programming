@@ -10,17 +10,17 @@ f(x)= 2x  ===>  f(2)= 4
  - Is a function that for the same input gives the same output. 
 - Has no side effects.
 So what makes a function pure? 
- ## * Given the same input is always gonna return the output then a pure function produces no side effects. so to have a pure function we do the following things: 
-1- avoid shared state
+ ## Given the same input is always gonna return the output then a pure function produces no side effects. so to have a pure function we do the following things: 
+### 1- avoid shared state
 Impure functions: 
 -Any thing that relies on the current time is not a pure function.(it doesn't have the same result during a day)
 -Random numbers: if you try to generate a random number inside of your function the function is not pure. (to make it pure you can generate the random number outside of the function and then pass it into the function).
 - Any thing that depends on I/O (user input, disk access, network access)
 
-2- Function Composition:
+#### 2- Function Composition:
 is the process of combining two/ or more functions in order to produce a new fuction or perform some computation. 
 
-2- Avoiding Shared State :
+### 2- Avoiding Shared State :
 (for example : all the response handlers shouldn't write to that state, the one comes last will always win so the solution is : giving the responsibility to just one function to access to that state)
 a shared state is a variable, object or memory space that exists in a shared scope, or as a property of an object that passes between scopes.
 shared scope can be:  1- a global scope 2- or closure scopes
@@ -45,7 +45,7 @@ y1();
 // ... which changes the resulting value:
 console.log(y.val); // 5
 * as we can see in the above example, in shared state situatioin the output of a function depends on the timing and the order of the function calls  while in pure function given the same input gives the same output.* This can simplify changes in our code and refactoring.
-3- Avoiding Mutable Data: 
+### 3- Avoiding Mutable Data: 
 
 
-4- Avoiding side-effects
+### 4- Avoiding side-effects
