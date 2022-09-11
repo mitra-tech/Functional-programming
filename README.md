@@ -25,12 +25,12 @@ is the process of combining two/ or more functions in order to produce a new fuc
 a shared state is a variable, object or memory space that exists in a shared scope, or as a property of an object that passes between scopes.
 shared scope can be:  1- a global scope 2- or closure scopes
 ** Usually in OOP, objects are shared between scopes by adding properties to other objects**
-* 
-const x = {
+ 
+  const x = {
   val: 2
 };
-const x1 = () => x.val += 1;
-const x2 = () => x.val *= 2;
+  const x1 = () => x.val += 1;
+  const x2 = () => x.val *= 2;
 x1();
 x2();
 console.log(x.val); // 6
