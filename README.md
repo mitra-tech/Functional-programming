@@ -1,17 +1,16 @@
-# Functional-programming
- 
+# Functional-programming 
 is the process of building software by composing : 
-1-  Pure Functions: (important in fp, concurrency, testable code,predictable code,...)
+## 1-  Pure Functions: (important in fp, concurrency, testable code,predictable code,...)
 typically there are three purpose of writing functions: 
-1- mapping input to output
+### 1- mapping input to output
 mappiong means we take inputs(arguments) => function => output(retrurn value)
 f(x)= 2x  ===>  f(2)= 4 
-2- procedures: a list of instructions that computer follows and call again and again
-3- I/O : Network request, user input, drawing to the screen,...
+### 2- procedures: a list of instructions that computer follows and call again and again
+### 3- I/O : Network request, user input, drawing to the screen,...
  - Is a function that for the same input gives the same output. 
 - Has no side effects.
 So what makes a function pure? 
-- Given the same input is always gonna return the output then a pure function produces no side effects. so to have a pure function we do the following things: 
+ ## * Given the same input is always gonna return the output then a pure function produces no side effects. so to have a pure function we do the following things: 
 1- avoid shared state
 Impure functions: 
 -Any thing that relies on the current time is not a pure function.(it doesn't have the same result during a day)
